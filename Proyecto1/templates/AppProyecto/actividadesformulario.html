@@ -1,0 +1,15 @@
+{% extends "AppProyecto/padre.html" %}
+
+{% block ContenidoQueCambia %}
+
+
+<form action="" method="POST" >{% csrf_token %}
+
+    <table>
+        {{ actFormulario.as_table }}
+        
+    </table>
+    <input type="submit" value="Enviar" />
+</form>
+ 
+{% endblock ContenidoQueCambia %}
